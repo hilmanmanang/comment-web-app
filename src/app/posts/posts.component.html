@@ -1,0 +1,6 @@
+<div *ngFor="let post of posts"
+    class="mx-8 my-3 border-gray-700 border rounded-lg p-4 hover:bg-slate-600 hover:text-white cursor-pointer"
+    [routerLink]="['/post', post.id]">
+    <div class="font-semibold text-lg">{{post.title}}</div>
+    <div>{{post.body}}</div>
+</div>
